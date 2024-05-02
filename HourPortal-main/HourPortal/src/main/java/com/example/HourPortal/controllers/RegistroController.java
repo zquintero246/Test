@@ -29,6 +29,8 @@ public class RegistroController {
     //Se crea un modelo User vacio para llenarlo con el forms del thymeleaf y devuelve la vista registro
     public String registro(Model model) {
         model.addAttribute("user", new User());
+
+        if(existingUse)
         return "Registro";
     }
 
